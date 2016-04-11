@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name esp12_footprint)(type KiCad)(uri "$(KIPRJMOD)\\esp12_footprint.pretty")(options "")(descr ""))
+  (lib (name initials)(type KiCad)(uri "$(KIPRJMOD)\\initials.pretty")(options "")(descr ""))
 )

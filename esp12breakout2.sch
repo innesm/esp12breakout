@@ -29,6 +29,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:esp12
+LIBS:esp12breakout2-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -279,7 +280,7 @@ U 1 1 570A4AD8
 P 1350 5000
 F 0 "C1" H 1375 5100 50  0000 L CNN
 F 1 "100nF" H 1375 4900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1388 4850 50  0001 C CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 1388 4850 50  0001 C CNN
 F 3 "" H 1350 5000 50  0000 C CNN
 	1    1350 5000
 	1    0    0    -1  
