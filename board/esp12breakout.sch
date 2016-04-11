@@ -1,0 +1,384 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ESP8266
+LIBS:esp12breakout-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X08 P1
+U 1 1 57064122
+P 3350 3400
+F 0 "P1" H 3350 3850 50  0000 C CNN
+F 1 "CONN_01X08" V 3450 3400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 3350 3400 50  0001 C CNN
+F 3 "" H 3350 3400 50  0000 C CNN
+	1    3350 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 P2
+U 1 1 570641B9
+P 6400 3400
+F 0 "P2" H 6400 3850 50  0000 C CNN
+F 1 "CONN_01X08" V 6500 3400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x08" H 6400 3400 50  0001 C CNN
+F 3 "" H 6400 3400 50  0000 C CNN
+	1    6400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP-12 U1
+U 1 1 5707A1DC
+P 8400 3350
+F 0 "U1" H 8400 3250 50  0000 C CNN
+F 1 "ESP-12" H 8400 3450 50  0000 C CNN
+F 2 "ESP Footprints:ESP-12" H 8400 3350 50  0001 C CNN
+F 3 "" H 8400 3350 50  0001 C CNN
+	1    8400 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5707A2AB
+P 4900 4450
+F 0 "#PWR01" H 4900 4200 50  0001 C CNN
+F 1 "GND" H 4900 4300 50  0000 C CNN
+F 2 "" H 4900 4450 50  0000 C CNN
+F 3 "" H 4900 4450 50  0000 C CNN
+	1    4900 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR02
+U 1 1 5707A319
+P 3550 4000
+F 0 "#PWR02" H 3550 3850 50  0001 C CNN
+F 1 "+3.3V" V 3550 4250 50  0000 C CNN
+F 2 "" H 3550 4000 50  0000 C CNN
+F 3 "" H 3550 4000 50  0000 C CNN
+	1    3550 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR03
+U 1 1 5707A40C
+P 4900 2300
+F 0 "#PWR03" H 4900 2150 50  0001 C CNN
+F 1 "+3.3V" H 4900 2440 50  0000 C CNN
+F 2 "" H 4900 2300 50  0000 C CNN
+F 3 "" H 4900 2300 50  0000 C CNN
+	1    4900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5707A562
+P 6050 2600
+F 0 "R5" V 6130 2600 50  0000 C CNN
+F 1 "10k" V 6050 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 2600 50  0001 C CNN
+F 3 "" H 6050 2600 50  0000 C CNN
+	1    6050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5707A5B1
+P 5900 2600
+F 0 "R4" V 5980 2600 50  0000 C CNN
+F 1 "10k" V 5900 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5830 2600 50  0001 C CNN
+F 3 "" H 5900 2600 50  0000 C CNN
+	1    5900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5707A5DE
+P 3900 2600
+F 0 "R3" V 3980 2600 50  0000 C CNN
+F 1 "10k" V 3900 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3830 2600 50  0001 C CNN
+F 3 "" H 3900 2600 50  0000 C CNN
+	1    3900 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5707A640
+P 3750 2600
+F 0 "R1" V 3830 2600 50  0000 C CNN
+F 1 "10k" V 3750 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3680 2600 50  0001 C CNN
+F 3 "" H 3750 2600 50  0000 C CNN
+	1    3750 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3050 4100 3050
+Wire Wire Line
+	3550 3150 4100 3150
+Wire Wire Line
+	3550 3250 4100 3250
+Wire Wire Line
+	3550 3350 4100 3350
+Wire Wire Line
+	4100 3450 3550 3450
+Wire Wire Line
+	3550 3550 4100 3550
+Wire Wire Line
+	4100 3650 3550 3650
+Wire Wire Line
+	3550 3750 3550 4000
+Wire Wire Line
+	6200 3050 5550 3050
+Wire Wire Line
+	5550 3150 6200 3150
+Wire Wire Line
+	6200 3250 5550 3250
+Wire Wire Line
+	5550 3350 6200 3350
+Wire Wire Line
+	5550 3450 6200 3450
+Wire Wire Line
+	5550 3550 6200 3550
+Wire Wire Line
+	5550 3650 6200 3650
+Wire Wire Line
+	5800 3750 6200 3750
+Wire Wire Line
+	4900 2300 4900 2700
+Wire Wire Line
+	4900 4000 4900 4450
+Connection ~ 4900 4350
+Wire Wire Line
+	3900 2750 3900 4350
+Connection ~ 3900 3050
+Wire Wire Line
+	3750 3250 3750 2750
+Connection ~ 3750 3250
+Wire Wire Line
+	5900 3450 5900 2750
+Connection ~ 5900 3450
+Wire Wire Line
+	6050 3550 6050 2750
+Connection ~ 6050 3550
+Wire Wire Line
+	3900 2450 3900 2350
+Wire Wire Line
+	3750 2350 6050 2350
+Connection ~ 4900 2350
+Wire Wire Line
+	5900 2350 5900 2450
+Wire Wire Line
+	6050 2350 6050 2450
+Connection ~ 5900 2350
+Wire Wire Line
+	3750 2350 3750 2450
+Connection ~ 3900 2350
+Wire Wire Line
+	6050 3650 6050 3950
+Connection ~ 6050 3650
+$Comp
+L R R6
+U 1 1 5707A96D
+P 6050 4100
+F 0 "R6" V 6130 4100 50  0000 C CNN
+F 1 "10k" V 6050 4100 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5980 4100 50  0001 C CNN
+F 3 "" H 6050 4100 50  0000 C CNN
+	1    6050 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 4350 6050 4250
+Wire Wire Line
+	5800 4350 5800 3750
+Connection ~ 5800 4350
+Wire Wire Line
+	4450 4350 6050 4350
+Wire Wire Line
+	3750 4350 4150 4350
+$Comp
+L C C1
+U 1 1 5707AC92
+P 4300 4350
+F 0 "C1" H 4325 4450 50  0000 L CNN
+F 1 "100nF" H 4325 4250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 4338 4200 50  0001 C CNN
+F 3 "" H 4300 4350 50  0000 C CNN
+	1    4300 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 3350 3750 3850
+Connection ~ 3750 3350
+$Comp
+L R R2
+U 1 1 5707AE04
+P 3750 4000
+F 0 "R2" V 3830 4000 50  0000 C CNN
+F 1 "1k" V 3750 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3680 4000 50  0001 C CNN
+F 3 "" H 3750 4000 50  0000 C CNN
+	1    3750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4150 3750 4350
+Connection ~ 3900 4350
+Text Label 9300 3050 0    60   ~ 0
+TXD
+Text Label 9300 3150 0    60   ~ 0
+RXD
+Text Label 9300 3250 0    60   ~ 0
+GPIO5
+Text Label 9300 3350 0    60   ~ 0
+GPIO4
+Text Label 9300 3450 0    60   ~ 0
+GPIO0
+Text Label 9300 3550 0    60   ~ 0
+GPIO2
+Text Label 9300 3650 0    60   ~ 0
+GPIO15
+Text Label 7500 3050 0    60   ~ 0
+REST
+Text Label 7500 3150 0    60   ~ 0
+ADC
+Text Label 7500 3250 0    60   ~ 0
+EN
+Text Label 7500 3350 0    60   ~ 0
+GPIO16
+Text Label 7500 3450 0    60   ~ 0
+GPIO14
+Text Label 7500 3550 0    60   ~ 0
+GPIO12
+Text Label 7500 3650 0    60   ~ 0
+GPIO13
+Text Label 5550 3050 0    60   ~ 0
+TXD
+Text Label 5550 3150 0    60   ~ 0
+RXD
+Text Label 5550 3250 0    60   ~ 0
+GPIO5
+Text Label 5550 3350 0    60   ~ 0
+GPIO4
+Text Label 5550 3450 0    60   ~ 0
+GPIO0
+Text Label 5550 3550 0    60   ~ 0
+GPIO2
+Text Label 5550 3650 0    60   ~ 0
+GPIO15
+Text Label 4100 3050 0    60   ~ 0
+REST
+Text Label 4100 3150 0    60   ~ 0
+ADC
+Text Label 4100 3250 0    60   ~ 0
+EN
+Text Label 4100 3350 0    60   ~ 0
+GPIO16
+Text Label 4100 3450 0    60   ~ 0
+GPIO14
+Text Label 4100 3550 0    60   ~ 0
+GPIO12
+Text Label 4100 3650 0    60   ~ 0
+GPIO13
+$Comp
+L GND #PWR04
+U 1 1 5707BBD4
+P 8400 4250
+F 0 "#PWR04" H 8400 4000 50  0001 C CNN
+F 1 "GND" H 8400 4100 50  0000 C CNN
+F 2 "" H 8400 4250 50  0000 C CNN
+F 3 "" H 8400 4250 50  0000 C CNN
+	1    8400 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR05
+U 1 1 5707BC9C
+P 8400 2450
+F 0 "#PWR05" H 8400 2300 50  0001 C CNN
+F 1 "+3.3V" H 8400 2590 50  0000 C CNN
+F 2 "" H 8400 2450 50  0000 C CNN
+F 3 "" H 8400 2450 50  0000 C CNN
+	1    8400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5707BED7
+P 5150 3350
+F 0 "C3" H 5175 3450 50  0000 L CNN
+F 1 "100nF" H 5175 3250 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5188 3200 50  0001 C CNN
+F 3 "" H 5150 3350 50  0000 C CNN
+	1    5150 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 2700 5150 3200
+Wire Wire Line
+	4700 2700 5150 2700
+Wire Wire Line
+	5150 4000 5150 3500
+Wire Wire Line
+	4700 4000 5150 4000
+$Comp
+L CP C2
+U 1 1 5707C039
+P 4700 3350
+F 0 "C2" H 4725 3450 50  0000 L CNN
+F 1 "10uF" H 4725 3250 50  0000 L CNN
+F 2 "Capacitors_Tantalum_SMD:TantalC_SizeA_EIA-3216_HandSoldering" H 4738 3200 50  0001 C CNN
+F 3 "" H 4700 3350 50  0000 C CNN
+	1    4700 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3200 4700 2700
+Connection ~ 4900 2700
+Wire Wire Line
+	4700 3500 4700 4000
+Connection ~ 4900 4000
+$EndSCHEMATC
